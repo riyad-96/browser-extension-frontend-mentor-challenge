@@ -145,7 +145,7 @@ function renderExtension(exts) {
       <label class="extension-toggle-label" for="${id}">
         <input onchange="toggleExtension('${name}')" ${
       isActive ? 'checked' : ''
-    } type="checkbox" id="${id}">
+    } aria-label="Toggle ${name} extension" type="checkbox" id="${id}">
         <span class="extension-toggle-btn"></span>
       </label>
     </div>`;
