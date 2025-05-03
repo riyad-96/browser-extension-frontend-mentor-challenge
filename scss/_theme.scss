@@ -1,0 +1,172 @@
+:root {
+  --gradient-light: linear-gradient(180deg, #ebf2fc 0%, #eef8f9 100%);
+  --gradient-dark: linear-gradient(180deg, #040918 0%, #091540 100%);
+
+  --neutral-900: #09153e;
+  --neutral-800: #212636;
+  --neutral-700: #2f364b;
+  --neutral-600: #545969;
+  --neutral-300: #c7c7c7;
+  --neutral-200: #d6e2f5;
+  --neutral-100: #ededed;
+  --neutral-0: #fbfdfe;
+  --red-400: hsl(3, 86%, 64%);
+  --red-500: hsl(3, 71%, 56%);
+  --red-700: hsl(3, 77%, 44%);
+
+  --body-gradient-bg: var(--gradient-light);
+  --default-text-clr: var(--neutral-900);
+
+  --header-bg: var(--neutral-0);
+  --header-border: var(--neutral-200);
+  --logo-clr: var(--red-700);
+
+  --theme-toggle-btn-bg: var(--neutral-100);
+  --theme-toggle-btn-hover-bg: var(--neutral-300);
+  --theme-toggle-btn-focus-bg: var(--neutral-100);
+
+  --nav-btn-bg: var(--neutral-0);
+  --nav-btn-border: var(--neutral-200);
+  --nav-btn-focus-bg: var(--neutral-0);
+  --nav-btn-selected-clr: var(--neutral-0);
+  --nav-btn-selected-bg: var(--red-700);
+  --nav-btn-selected-border: var(--red-500);
+  --nav-btn-selected-hover-bg: var(--red-500);
+
+  --each-extension-bg: var(--neutral-0);
+  --each-extension-border: var(--neutral-200);
+  --each-extension-description-clr: var(--neutral-600);
+
+  --ext-remove-btn-border: var(--neutral-300);
+  --ext-remove-btn-hover-clr: var(--neutral-0);
+  --ext-remove-btn-hover-bg: var(--red-700);
+  --ext-remove-btn-hover-border: var(--red-700);
+  --ext-remove-btn-focus-bg: var(--neutral-100);
+
+  --ext-toggle-btn-bg: var(--neutral-300);
+  --ext-toggle-btn-border: var(--neutral-300);
+  --ext-toggle-btn-checked-bg: var(--red-700);
+  --ext-toggle-btn-checked-border: var(--red-700);
+  --ext-toggle-btn-checked-hover-bg: var(--red-500);
+  --ext-toggle-btn-checked-hover-border: var(--red-500);
+
+  --default-outline-clr: var(--red-400);
+
+  --box-shadow: 0 1px 5px hsla(0, 0%, 7%, 0.1);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --body-gradient-bg: var(--gradient-dark);
+    --default-text-clr: var(--neutral-0);
+
+    --header-bg: var(--neutral-800);
+    --header-border: transparent;
+    --logo-clr: var(--red-500);
+    --theme-toggle-btn-bg: var(--neutral-700);
+    --theme-toggle-btn-hover-bg: var(--neutral-600);
+    --theme-toggle-btn-focus-bg: var(--neutral-600);
+
+    --nav-btn-bg: var(--neutral-700);
+    --nav-btn-border: var(--neutral-600);
+    --nav-btn-focus-bg: var(--neutral-600);
+    --nav-btn-selected-clr: var(--neutral-900);
+    --nav-btn-selected-bg: var(--red-500);
+    --nav-btn-selected-border: var(--red-500);
+    --nav-btn-selected-hover-bg: var(--red-400);
+
+    --each-extension-bg: var(--neutral-800);
+    --each-extension-border: var(--neutral-600);
+    --each-extension-description-clr: var(--neutral-300);
+
+    --ext-remove-btn-border: var(--neutral-600);
+    --ext-remove-btn-hover-clr: var(--neutral-900);
+    --ext-remove-btn-hover-bg: var(--red-500);
+    --ext-remove-btn-hover-border: var(--red-500);
+    --ext-remove-btn-focus-bg: var(--neutral-600);
+
+    --ext-toggle-btn-bg: var(--neutral-600);
+    --ext-toggle-btn-border: var(--neutral-600);
+    --ext-toggle-btn-checked-bg: var(--red-400);
+    --ext-toggle-btn-checked-border: var(--red-400);
+    --ext-toggle-btn-checked-hover-bg: var(--red-500);
+    --ext-toggle-btn-checked-hover-border: var(--red-500);
+  }
+}
+
+[data-theme='light'] {
+  color-scheme: light;
+  --body-gradient-bg: var(--gradient-light);
+  --default-text-clr: var(--neutral-900);
+
+  --header-bg: var(--neutral-0);
+  --header-border: var(--neutral-200);
+  --logo-clr: var(--red-700);
+
+  --theme-toggle-btn-bg: var(--neutral-100);
+  --theme-toggle-btn-hover-bg: var(--neutral-300);
+  --theme-toggle-btn-focus-bg: var(--neutral-100);
+
+  --nav-btn-bg: var(--neutral-0);
+  --nav-btn-border: var(--neutral-200);
+  --nav-btn-focus-bg: var(--neutral-0);
+  --nav-btn-selected-clr: var(--neutral-0);
+  --nav-btn-selected-bg: var(--red-700);
+  --nav-btn-selected-border: var(--red-500);
+  --nav-btn-selected-hover-bg: var(--red-500);
+
+  --each-extension-bg: var(--neutral-0);
+  --each-extension-border: var(--neutral-200);
+  --each-extension-description-clr: var(--neutral-600);
+
+  --ext-remove-btn-border: var(--neutral-300);
+  --ext-remove-btn-hover-clr: var(--neutral-0);
+  --ext-remove-btn-hover-bg: var(--red-700);
+  --ext-remove-btn-hover-border: var(--red-700);
+  --ext-remove-btn-focus-bg: var(--neutral-100);
+
+  --ext-toggle-btn-bg: var(--neutral-300);
+  --ext-toggle-btn-border: var(--neutral-300);
+  --ext-toggle-btn-checked-bg: var(--red-700);
+  --ext-toggle-btn-checked-border: var(--red-700);
+  --ext-toggle-btn-checked-hover-bg: var(--red-500);
+  --ext-toggle-btn-checked-hover-border: var(--red-500);
+}
+
+[data-theme='dark'] {
+  color-scheme: dark;
+  --body-gradient-bg: var(--gradient-dark);
+    --default-text-clr: var(--neutral-0);
+
+    --header-bg: var(--neutral-800);
+    --header-border: transparent;
+    --logo-clr: var(--red-500);
+    --theme-toggle-btn-bg: var(--neutral-700);
+    --theme-toggle-btn-hover-bg: var(--neutral-600);
+    --theme-toggle-btn-focus-bg: var(--neutral-600);
+
+    --nav-btn-bg: var(--neutral-700);
+    --nav-btn-border: var(--neutral-600);
+    --nav-btn-focus-bg: var(--neutral-600);
+    --nav-btn-selected-clr: var(--neutral-900);
+    --nav-btn-selected-bg: var(--red-500);
+    --nav-btn-selected-border: var(--red-500);
+    --nav-btn-selected-hover-bg: var(--red-400);
+
+    --each-extension-bg: var(--neutral-800);
+    --each-extension-border: var(--neutral-600);
+    --each-extension-description-clr: var(--neutral-300);
+
+    --ext-remove-btn-border: var(--neutral-600);
+    --ext-remove-btn-hover-clr: var(--neutral-900);
+    --ext-remove-btn-hover-bg: var(--red-500);
+    --ext-remove-btn-hover-border: var(--red-500);
+    --ext-remove-btn-focus-bg: var(--neutral-600);
+
+    --ext-toggle-btn-bg: var(--neutral-600);
+    --ext-toggle-btn-border: var(--neutral-600);
+    --ext-toggle-btn-checked-bg: var(--red-400);
+    --ext-toggle-btn-checked-border: var(--red-400);
+    --ext-toggle-btn-checked-hover-bg: var(--red-500);
+    --ext-toggle-btn-checked-hover-border: var(--red-500);
+}
