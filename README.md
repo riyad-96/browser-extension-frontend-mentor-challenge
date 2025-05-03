@@ -4,4 +4,4 @@
 
 ## Personal review
 - I have learnt lot of things while building this project.
-- It is so satisfying when you try to achive what you want and the pieces fits in its actual position.
+- It is so satisfying when you try to achieve what you want and the pieces fits in its actual position.

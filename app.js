@@ -109,7 +109,6 @@ function renderExtension(exts) {
 
     const getNewExtBtn = div.querySelector('.empty-page button');
     getNewExtBtn.addEventListener('click', () => {
-      console.log(getNewExtBtn);
       localStorage.removeItem('extensions');
       const btn = document.querySelector(`[data-current-tab="${currentTab}"]`);
       btn.click();
@@ -216,7 +215,6 @@ function removeExtensions(name) {
   if (index !== -1) {
     savedExt.splice(index, 1);
     saveExtension(savedExt);
-    console.log(`${name} removed`);
   }
   reRenderTimeout = setTimeout(() => {
     filterExtensions(currentTab);
