@@ -146,7 +146,7 @@ function renderExtension(exts) {
         <input onchange="toggleExtension('${name}')" ${
       isActive ? 'checked' : ''
     } type="checkbox" id="${id}">
-        <div class="extension-toggle-btn"></div>
+        <span class="extension-toggle-btn"></span>
       </label>
     </div>`;
 
