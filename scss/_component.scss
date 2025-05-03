@@ -279,3 +279,22 @@ input[type='checkbox']:focus-visible + div {
   outline: 2px solid var(--default-outline-clr);
   outline-offset: 2px;
 }
+
+
+//! footer styling
+footer {
+  padding-inline: 1.5rem;
+  padding-block: 10rem 2rem;
+
+  text-align: center;
+
+  a {
+    color: var(--ext-toggle-btn-checked-bg);
+    text-underline-offset: 1px;
+    transition: all 200ms;
+    font-weight: 500;
+  }
+  a:hover {
+    text-underline-offset: 5px;
+  }
+}

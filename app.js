@@ -99,27 +99,27 @@ function renderExtension(exts) {
 
   if (exts.length <= 0) {
     const div = document.createElement('div');
-    div.classList.add('empty-page')
+    div.classList.add('empty-page');
     div.innerHTML = `
     <div>
       <span>There is no extension left.</span>
-      <span>Get extensions...?</span>
+      <span>Need extensions...?</span>
       <button>Get now</button>
     </div>`;
-    
+
     const getNewExtBtn = div.querySelector('.empty-page button');
     getNewExtBtn.addEventListener('click', () => {
       console.log(getNewExtBtn);
       localStorage.removeItem('extensions');
       const btn = document.querySelector(`[data-current-tab="${currentTab}"]`);
-      btn.click()
+      btn.click();
     });
 
     requestAnimationFrame(() => {
-      div.querySelector('div').classList.add('appear')
-    })
+      div.querySelector('div').classList.add('appear');
+    });
 
-    extensionContainer.appendChild(div)
+    extensionContainer.appendChild(div);
   }
 
   exts.forEach((obj, index) => {

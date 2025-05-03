@@ -24,7 +24,7 @@
 }
 
 .toast-message-container div span {
-  max-height: 40px;
+  height: 40px;
   padding-inline: 1rem;
   display: grid;
   place-items: center;
@@ -34,7 +34,7 @@
   color: #fff;
   box-shadow: 0 1px 5px hsl(0, 0%, 30%, 0.5);
 
-  translate: 0 -110%;
+  translate: 0 -130%;
   opacity: 0;
   scale: 0.3;
   transition: 250ms;
